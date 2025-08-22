@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "@fastify/cors": "^8.5.0",
+    "@langchain/core": "^0.3.72",
+    "@langchain/openai": "^0.6.9",
+    "dotenv": "^17.2.1",
+    "fastify": "^4.27.0",
+    "knex": "^3.1.0",
+    "openai": "^5.15.0",
+    "sqlite3": "^5.1.7"
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "cross-env": "^10.0.0",
+    "nodemon": "^3.1.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "knex migrate:latest",
+    "start": "node index.js",
+    "dev": "cross-env PORT=3001 nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module"
+}
